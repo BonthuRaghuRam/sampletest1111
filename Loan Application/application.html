@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Loan Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    /* Banner */
+    .banner {
+      background: linear-gradient(to right, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .banner p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    .banner button {
+      background: #ffcc00;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 50px 20px;
+      text-align: center;
+      background: white;
+    }
+    .features h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .feature-card {
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    }
+    .feature-card h3 {
+      margin-bottom: 10px;
+      color: #0077b6;
+    }
+
+    /* Loan Form */
+    .loan-form {
+      background: #fff;
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    .loan-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0077b6;
+    }
+    .loan-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .loan-form input, 
+    .loan-form select, 
+    .loan-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    .loan-form button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+    }
+    .loan-form button:hover {
+      background: #005f8a;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Personal Loan Made Easy</h1>
+    <p>Quick approval • Low interest rates • Flexible repayment</p>
+    <button>Apply Now</button>
+  </div>
+
+  <!-- Features & Benefits -->
+  <section class="features">
+    <h2>Features & Benefits</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>Instant Approval</h3>
+        <p>Get your loan approved within minutes with minimal documentation.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Low Interest Rates</h3>
+        <p>We offer competitive interest rates to make repayment stress-free.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Flexible Repayment</h3>
+        <p>Choose repayment plans that best fit your financial situation.</p>
+      </div>
+      <div class="feature-card">
+        <h3>No Hidden Charges</h3>
+        <p>All terms are transparent, with zero hidden fees.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loan Application Form -->
+  <div class="loan-form">
+    <h2>Apply for a Loan</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+      <label for="amount">Loan Amount</label>
+      <input type="number" id="amount" placeholder="Enter loan amount" required>
+
+      <label for="purpose">Purpose of Loan</label>
+      <select id="purpose" required>
+        <option value="">Select purpose</option>
+        <option value="education">Education</option>
+        <option value="medical">Medical</option>
+        <option value="business">Business</option>
+        <option value="personal">Personal</option>
+      </select>
+
+      <label for="message">Additional Information</label>
+      <textarea id="message" rows="4" placeholder="Enter details..."></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+</body>
+</html>
